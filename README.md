@@ -88,4 +88,4 @@ npm run dev
 
 ## Acknowledgments
 
-This project's trading signal generation logic is adapted from [Free US Investment Agent System](https://github.com/24mlight/Free_US_Investment_Agent_System). Rhanks to the original authors for their excellent work and making it available under the MIT license.
+This project's trading signal generation logic is adapted from [Free US Investment Agent System](https://github.com/24mlight/Free_US_Investment_Agent_System). Thanks to the original authors for their excellent work and making it available under the MIT license.
