@@ -1,14 +1,27 @@
-# Trading Signals Dashboard
+# AI Trading Signals Dashboard
 
-A real-time dashboard that displays trading signals and confidence metrics for different stock tickers.
+An AI-powered trading signal system that uses multiple agents to make trading decisions.
 
 ## Features
 
-- Real-time trading signals generation
-- Interactive ticker search
-- Signal confidence visualization
-- Agent-based signal analysis
-- Historical signal tracking
+- Multiple AI agents for different aspects of trading analysis
+- FastAPI backend for serving trading signals
+- Real-time market data integration
+- Sentiment analysis from news sources
+- Technical and fundamental analysis
+
+## Setup
+
+1. Clone the repository
+2. Install dependencies: `poetry install`
+3. Copy `.env.example` to `.env` and fill in your API keys
+4. Run the development server: `poetry run uvicorn src.app.main:app --reload`
+
+## Project Structure
+
+- `src/agents/`: Individual trading agents
+- `src/app/`: FastAPI application
+- `src/data/`: Data storage and caching
 
 ## Tech Stack
 
@@ -72,21 +85,6 @@ npm run dev
    - Confidence level
    - Reasoning
    - Agent-based confidence metrics
-
-## Project Structure
-
-```
-├── frontend/
-│   ├── src/
-│   │   ├── app/
-│   │   ├── components/
-│   │   └── services/
-│   └── package.json
-└── backend/
-    ├── main.py
-    ├── models/
-    └── requirements.txt
-```
 
 ## Acknowledgments
 
