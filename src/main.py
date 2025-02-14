@@ -11,6 +11,7 @@ from agents.fundamentals import fundamentals_agent
 from langgraph.graph import END, StateGraph
 from langchain_core.messages import HumanMessage
 from dotenv import load_dotenv
+import json
 load_dotenv()  # 加载 .env 文件中的环境变量
 
 
@@ -128,5 +129,13 @@ if __name__ == "__main__":
         show_reasoning=args.show_reasoning,
         num_of_news=args.num_of_news
     )
+
+    result = result[8:-5]
+    data = json.loads(result)
+    with open(f"src/data/model_output/trade_signal_{args.ticker}.json", "w") as f:
+        json.dump(data, f, indent=4)
+
+    print("JSON saved successfully.")
+
     print("\nFinal Result:")
     print(result)
